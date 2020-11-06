@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.home-text-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.home-text-container h1 {
+  font-size: 2.5rem;
+}
+
+.home-text-container p {
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 992px) {
+  .home-text-container {
+    height: 50%;
+    text-align: center;
+  }
+  .home-text-container h1 {
+    font-size: 5rem;
+  }
+
+  .home-text-container p {
+    font-size: 2.5rem;
+  }
+}
