@@ -5,29 +5,49 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: black;
-  background-color: rgb(165, 150, 113);
+  color: #fff;
+  background-color: black;
   border-radius: 5%;
   box-shadow: -8px 8px 7px -1px #000000;
 }
 
-.move-right {
-  animation: 1s ease-in slideright;
+.in-right {
+  animation: 1s ease-in inright;
+}
+.out-right {
+  animation: 0.5s outright;
 }
 
-.move-left {
-  animation: 1s ease-in slideleft;
+.in-left {
+  animation: 1s ease-in inleft;
+}
+.out-left {
+  animation: 0.5s outleft;
 }
 
-@keyframes slideright {
+@keyframes inright {
   from {
+    opacity: 0;
     transform: translateX(-500px) scale(0.5);
   }
 }
-
-@keyframes slideleft {
-  from {
+@keyframes outright {
+  to {
+    opacity: 0;
     transform: translateX(500px) scale(0.5);
+  }
+}
+
+@keyframes inleft {
+  from {
+    opacity: 0;
+    transform: translateX(500px) scale(0.5);
+  }
+}
+@keyframes outleft {
+  to {
+    opacity: 0;
+    transform: translateX(-500px) scale(0.5);
   }
 }
 
@@ -35,5 +55,30 @@
   .card {
     height: 70%;
     width: 60%;
+  }
+  @keyframes inright {
+    from {
+      opacity: 0;
+      transform: translateX(-1500px) scale(0.5);
+    }
+  }
+  @keyframes outright {
+    to {
+      opacity: 0;
+      transform: translateX(1500px) scale(0.5);
+    }
+  }
+
+  @keyframes inleft {
+    from {
+      opacity: 0;
+      transform: translateX(1500px) scale(0.5);
+    }
+  }
+  @keyframes outleft {
+    to {
+      opacity: 0;
+      transform: translateX(-1500px) scale(0.5);
+    }
   }
 }

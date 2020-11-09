@@ -9,32 +9,43 @@ const CardContainer = () => {
   const [cards, setCards] = useState(data);
   const [currentCard, setCurrentCard] = useState(cards[0]);
   const [cardAnim, setCardAnim] = useState("");
+  const [showNext, setShowNext] = useState(false);
 
   const resetAnim = () => {
     setCardAnim("");
   };
 
+  const inAnim = (anim) => {
+    setCardAnim(anim);
+  };
+
+  const delaySwitch = (number) => {
+    setCurrentCard(cards[number]);
+  };
+
   const prevCardHandler = () => {
+    setTimeout(() => inAnim("in-left"), 200);
+    setCardAnim("out-left");
+    setTimeout(resetAnim, 1500);
     const prevCard = cards.indexOf(currentCard) - 1;
     if (prevCard === -1) {
-      setCurrentCard(cards[cards.length - 1]);
+      setTimeout(() => delaySwitch(cards.length - 1), 600);
     } else {
-      setCurrentCard(cards[prevCard]);
+      setTimeout(() => delaySwitch(prevCard), 600);
     }
-    setCardAnim("move-left");
-    setTimeout(resetAnim, 1000);
   };
 
   const nextCardHandler = () => {
+    setTimeout(() => inAnim("in-right"), 200);
+    setCardAnim("out-right");
+    setTimeout(resetAnim, 1500);
     console.log(cards.indexOf(currentCard));
     const nextCard = cards.indexOf(currentCard) + 1;
     if (nextCard === cards.length) {
-      setCurrentCard(cards[0]);
+      setTimeout(() => delaySwitch(0), 600);
     } else {
-      setCurrentCard(cards[nextCard]);
+      setTimeout(() => delaySwitch(nextCard), 600);
     }
-    setCardAnim("move-right");
-    setTimeout(resetAnim, 1000);
   };
 
   let currentCardDisplay = <Card info={currentCard} cardAnimation={cardAnim} />;
