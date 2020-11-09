@@ -22,9 +22,6 @@ function App() {
       setHasMore(false);
       return;
     }
-    // a fake async api call like which sends
-    // 20 more records in 1.5 secs
-    console.log("extraC", extraComponents[count]);
     setTimeout(() => {
       setState({
         items: state.items.concat([extraComponents[count]]),
