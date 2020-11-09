@@ -14,9 +14,6 @@ code {
 
 .screen-container {
   height: 150vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(2, 2, 2, 0.924);
 }
 

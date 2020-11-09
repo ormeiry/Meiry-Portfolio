@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Home from "./components/Home/Home";
 import AboutMe from "./components/About/AboutMe";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/portfolio/Portfolio";
 import TechStack from "./components/TechStack";
 import Contact from "./components/Contact";
 import { FaArrowCircleUp } from "react-icons/fa";
@@ -27,7 +27,7 @@ function App() {
         items: state.items.concat([extraComponents[count]]),
       });
       setCount(count + 1);
-    }, 200);
+    }, 0);
   };
 
   const backToTopHandler = () => {

@@ -1,0 +1,21 @@
+.card-container {
+  height: 60%;
+  width: 97%;
+  background-color: rgba(2, 2, 2, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-card {
+  background-color: #fdc43f;
+  border-radius: 50%;
+  transform: scale(1.5);
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+}
+
+.btn-card:hover {
+  cursor: pointer;
+  transform: scale(2.2);
+}
