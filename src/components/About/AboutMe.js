@@ -1,12 +1,37 @@
-import React from "react";
-import "./AboutMe.css";
+import React, { useEffect, useRef } from 'react';
+import './AboutMe.css';
 
 const AboutMe = () => {
+  const ref = useRef();
+  useEffect(() => {
+    console.log(ref.current);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          console.log();
+          entry.target.firstChild.classList.remove('unseen');
+          entry.target.children[1].firstChild.classList.remove('unseen');
+          entry.target.children[1].firstChild.classList.add('animation-text');
+          entry.target.firstChild.classList.add('animation-side');
+        }
+      },
+      {
+        threshold: [0.2],
+      }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      observer.unobserve(ref.current);
+    };
+  }, []);
+
   return (
-    <div className="about-wrapper">
-      <div className="about-side"></div>
-      <div className="about-container">
-        <h1>
+    <div className='about-wrapper' ref={ref}>
+      <div className='unseen'></div>
+      <div className='about-container'>
+        <h1 className='unseen'>
           <span>A</span>bout Me
         </h1>
         <p>
