@@ -20,16 +20,16 @@
 
 @media screen and (min-width: 992px) {
   .home-text-container {
-    width: 30%;
-    height: 30%;
+    width: 60%;
+    height: 50%;
     margin-top: 0;
   }
 
   .home-text-container h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .home-text-container p {
-    font-size: 3.8rem;
+    font-size: 4.5rem;
   }
 }

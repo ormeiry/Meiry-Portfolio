@@ -14,6 +14,10 @@ code {
     monospace;
 }
 
+.app {
+  height: 102vh;
+  width: 100vw;
+}
 /* .screen-container {
   height: 120vh;
   width: 100vw;

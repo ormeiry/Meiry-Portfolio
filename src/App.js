@@ -15,6 +15,7 @@ function App() {
     <TechStack key="TechStack" />,
     <Contact key="Contact" />,
   ]);
+
   const [count, setCount] = useState(0);
   const [hasMore, setHasMore] = useState(true);
   const fetchMoreData = () => {

@@ -1,7 +1,7 @@
 .portfolio-wrapper {
   height: 120vh;
   width: 100%;
-  background-color: rgb(241, 240, 240);
+  background-color: rgba(245, 244, 244, 0.959);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -10,11 +10,24 @@
 
 .portfolio-wrapper h1 {
   font-size: 4rem;
-  color: #000000;
+  color: #00061f;
+  animation: 2s ease-in pop-in;
+}
+
+@keyframes pop-in {
+  from {
+    transform: translateY(250px) scale(0.3);
+  }
 }
 
 @media screen and (min-width: 992px) {
   .portfolio-wrapper h1 {
     font-size: 7rem;
+  }
+
+  @keyframes pop-in {
+    from {
+      transform: translateY(700px) scale(0.1);
+    }
   }
 }
