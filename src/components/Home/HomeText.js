@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import './HomeText.css';
+import "./HomeText.css";
 
 const HomeText = ({ name, desc }) => {
-  const [nameText, setNameText] = useState('');
-  const [descText, setDescText] = useState('');
+  const [nameText, setNameText] = useState("");
+  const [descText, setDescText] = useState("");
 
   useEffect(() => {
     displayText(name, desc);
   }, [name, desc]);
 
   const displayText = (name, desc) => {
-    const nameArr = name.split('');
-    const descArr = desc.split('');
+    const nameArr = name.split("");
+    const descArr = desc.split("");
 
     for (let i = 0; i < nameArr.length; i++) {
       setTimeout(() => {
@@ -27,7 +27,7 @@ const HomeText = ({ name, desc }) => {
   };
 
   return (
-    <div className='home-text-container'>
+    <div className="home-text-container">
       <h1>{nameText}</h1>
       <p>{descText}</p>
     </div>

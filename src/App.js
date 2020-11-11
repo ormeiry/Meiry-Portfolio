@@ -27,7 +27,7 @@ function App() {
         items: state.items.concat([extraComponents[count]]),
       });
       setCount(count + 1);
-    }, 0);
+    }, 20);
   };
 
   const backToTopHandler = () => {

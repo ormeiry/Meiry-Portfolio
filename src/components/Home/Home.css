@@ -1,11 +1,17 @@
 .home-body {
-  height: 120vh;
-  margin: 0;
-  padding: 0;
+  height: 102vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../images/homebg.jpg);
-  background-size: cover;
-  background-position-x: 58%;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  /* background-image: url(../../images/homebg.jpg); */
+}
+
+.video-tag {
+  z-index: -100;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }

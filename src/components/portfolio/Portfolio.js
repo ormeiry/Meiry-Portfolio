@@ -5,11 +5,9 @@ import "./portfolio.css";
 
 const Portfolio = () => {
   return (
-    <div className="screen-container">
-      <div className="portfolio-wrapper">
-        <h1>Portfolio</h1>
-        <CardContainer />
-      </div>
+    <div className="portfolio-wrapper">
+      <h1>My Projects</h1>
+      <CardContainer />
     </div>
   );
 };
