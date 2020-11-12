@@ -6,13 +6,22 @@
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
   position: relative;
+  overflow: hidden;
   /* background-image: url(../../images/homebg.jpg); */
 }
 
 .video-tag {
+  height: 100%;
+  width: 350%;
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: -100;
   object-fit: fill;
+}
+
+@media screen and (min-width: 992px) {
+  .video-tag {
+    width: 100%;
+  }
 }

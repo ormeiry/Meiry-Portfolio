@@ -1,18 +1,17 @@
-import React, { useEffect, useRef } from 'react';
-import './AboutMe.css';
+import React, { useEffect, useRef } from "react";
+import "./AboutMe.css";
 
 const AboutMe = () => {
   const ref = useRef();
   useEffect(() => {
-    console.log(ref.current);
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          console.log();
-          entry.target.firstChild.classList.remove('unseen');
-          entry.target.children[1].firstChild.classList.remove('unseen');
-          entry.target.children[1].firstChild.classList.add('animation-text');
-          entry.target.firstChild.classList.add('animation-side');
+          console.log("about me");
+          entry.target.firstChild.classList.remove("unseen");
+          entry.target.children[1].classList.remove("unseen");
+          entry.target.children[1].classList.add("animation-side");
+          entry.target.firstChild.classList.add("animation-text");
         }
       },
       {
@@ -28,12 +27,12 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className='about-wrapper' ref={ref}>
-      <div className='unseen'></div>
-      <div className='about-container'>
-        <h1 className='unseen'>
+    <div className="about-wrapper">
+      <div className="about-container" ref={ref}>
+        <h1 className="unseen">
           <span>A</span>bout Me
         </h1>
+        <div className="unseen"></div>
         <p>
           I love People, Programming, and learning new things. Currently looking
           for a place that has all three. I have dedicated my time and effort to

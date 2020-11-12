@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -11,18 +11,9 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.app {
-  height: 102vh;
-  width: 100vw;
-}
-/* .screen-container {
-  height: 120vh;
-  width: 100vw;
-} */
 
 .btn-top {
   transform: scale(2);

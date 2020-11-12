@@ -1,16 +1,16 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
-import CardContainer from '../Card/CardContainer';
-import './portfolio.css';
+import CardContainer from "../Card/CardContainer";
+import "./portfolio.css";
 
 const Portfolio = () => {
   const ref = useRef();
   useEffect(() => {
-    console.log(ref.current);
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          entry.target.firstChild.classList.add('animation');
+          console.log("portfolio");
+          entry.target.firstChild.classList.add("animation");
         }
       },
       {
@@ -26,7 +26,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className='portfolio-wrapper' ref={ref}>
+    <div className="portfolio-wrapper" ref={ref}>
       <h1>My Projects</h1>
       <CardContainer />
     </div>
