@@ -50,7 +50,7 @@ const HomeText = ({ name, desc }) => {
           target="_blank"
           rel="noopener"
         >
-          <i class="fab fa-linkedin fa-3x"></i>
+          <i className="fab fa-linkedin fa-3x"></i>
         </a>
         <a
           className={iconsClass}
@@ -58,10 +58,10 @@ const HomeText = ({ name, desc }) => {
           target="_blank"
           rel="noopener"
         >
-          <i class="fab fa-github fa-3x"></i>
+          <i className="fab fa-github fa-3x"></i>
         </a>
         <a className={iconsClass} href="mailto: ormeiry2411@gmail.com">
-          <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+          <i className="fa fa-envelope fa-3x" aria-hidden="true"></i>
         </a>
       </div>
     </div>

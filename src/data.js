@@ -9,7 +9,8 @@ const items = [
     link: "https://meiry-contact-keeper.herokuapp.com/login",
     github: "https://github.com/ormeiry/Contact-Keeper",
     name: "Contact Keeper",
-    img: "img/projects/contactkeeper.png",
+    img: "/projects/contactkeeper.png",
+    id: "contact",
   },
   {
     title: "Log Everything!",
@@ -21,7 +22,8 @@ const items = [
     link: "https://meiry-it-logger.herokuapp.com/#!",
     github: "https://github.com/ormeiry/it-log-board",
     name: "IT-Logger",
-    img: "img/projects/itlogger.png",
+    img: "/projects/itlogger.png",
+    id: "it",
   },
   {
     title: "Let's Sort Things Out Once And For All...",
@@ -33,7 +35,8 @@ const items = [
     link: "https://ormeiry.github.io/-3-2-1-sort-/",
     github: "https://github.com/ormeiry/-3-2-1-sort-",
     name: "[3, 2, 1, sort!]",
-    img: "img/projects/sort.png",
+    img: "/projects/sort.png",
+    id: "sort",
   },
   {
     title: "Yes, It's Better Than Github.",
@@ -45,7 +48,8 @@ const items = [
     link: "https://git-user-web-app.netlify.app/",
     github: "https://github.com/ormeiry/App-Git-User",
     name: "Git User",
-    img: "img/projects/gituser.png",
+    img: "/projects/gituser.png",
+    id: "git",
   },
 ];
 

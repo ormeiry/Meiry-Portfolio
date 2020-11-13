@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-  height: 120vh;
+  height: 110vh;
   width: 100vw;
   margin-top: 50px;
   background-color: rgba(245, 244, 244, 0.959);
@@ -10,7 +10,8 @@
 }
 
 .portfolio-wrapper h1 {
-  font-size: 4rem;
+  margin-bottom: 0;
+  font-size: 3rem;
   color: #00061f;
 }
 

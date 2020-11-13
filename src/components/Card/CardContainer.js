@@ -1,15 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import Card from "./Card";
 import data from "../../data";
 import "./CardContainer.css";
 
+import contactImg from "../../images/projects/contactkeeper.png";
+import gitImg from "../../images/projects/gituser.png";
+import itImg from "../../images/projects/itlogger.png";
+import sortImg from "../../images/projects/sort.png";
+
 const CardContainer = () => {
   const [cards, setCards] = useState(data);
   const [currentCard, setCurrentCard] = useState(cards[0]);
+  const [currentImg, setCurrentImg] = useState(contactImg);
   const [cardAnim, setCardAnim] = useState("");
   const [showNext, setShowNext] = useState(false);
+
+  const changeImg = () => {
+    switch (currentCard.id) {
+      case "git":
+        setCurrentImg(gitImg);
+        break;
+      case "it":
+        setCurrentImg(itImg);
+        break;
+      case "sort":
+        setCurrentImg(sortImg);
+        break;
+      default:
+        setCurrentImg(contactImg);
+        break;
+    }
+  };
+
+  useEffect(() => {
+    changeImg();
+  }, [currentCard]);
 
   const resetAnim = () => {
     setCardAnim("");
@@ -48,7 +75,9 @@ const CardContainer = () => {
     }
   };
 
-  let currentCardDisplay = <Card info={currentCard} cardAnimation={cardAnim} />;
+  let currentCardDisplay = (
+    <Card info={currentCard} cardAnimation={cardAnim} img={currentImg} />
+  );
 
   return (
     <div className="card-container">
