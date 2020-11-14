@@ -27,8 +27,8 @@
 .animation-side {
   width: 95%;
   height: 1%;
-  background-color: #00061f;
-  border-bottom: 2px solid #4f4cb0;
+  background-color: #4da8da;
+  border-bottom: 2px solid #007cc7;
   animation: 2.5s slideinbar;
 }
 

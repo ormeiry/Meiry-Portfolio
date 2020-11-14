@@ -9,83 +9,34 @@ import contactImg from "../../images/projects/contactkeeper.png";
 import gitImg from "../../images/projects/gituser.png";
 import itImg from "../../images/projects/itlogger.png";
 import sortImg from "../../images/projects/sort.png";
+import contactImgM from "../../images/projects/contactkeeperM.jpg";
+import gitImgM from "../../images/projects/gituserM.jpg";
+import itImgM from "../../images/projects/itloggerM.jpg";
+import sortImgM from "../../images/projects/sortM.jpg";
 
 const CardContainer = () => {
-  const [cards, setCards] = useState(data);
-  const [currentCard, setCurrentCard] = useState(cards[0]);
-  const [currentImg, setCurrentImg] = useState(contactImg);
-  const [cardAnim, setCardAnim] = useState("");
-  const [showNext, setShowNext] = useState(false);
+  const [dataArr, setData] = useState(data);
 
-  const changeImg = () => {
-    switch (currentCard.id) {
+  const screenWidth = window.screen.width;
+  const changeImg = (id) => {
+    switch (id) {
       case "git":
-        setCurrentImg(gitImg);
-        break;
+        return screenWidth > 750 ? gitImgM : gitImg;
       case "it":
-        setCurrentImg(itImg);
-        break;
+        return screenWidth > 750 ? itImgM : itImg;
       case "sort":
-        setCurrentImg(sortImg);
-        break;
+        return screenWidth > 750 ? sortImgM : sortImg;
       default:
-        setCurrentImg(contactImg);
-        break;
+        return screenWidth > 750 ? contactImgM : contactImg;
     }
   };
 
-  useEffect(() => {
-    changeImg();
-  }, [currentCard]);
+  const project = dataArr.map((project, i) => {
+    let img = changeImg(project.id);
+    return <Card info={data[i]} img={img} key={project.id} />;
+  });
 
-  const resetAnim = () => {
-    setCardAnim("");
-  };
-
-  const inAnim = (anim) => {
-    setCardAnim(anim);
-  };
-
-  const delaySwitch = (number) => {
-    setCurrentCard(cards[number]);
-  };
-
-  const prevCardHandler = () => {
-    setTimeout(() => inAnim("in-left"), 200);
-    setCardAnim("out-left");
-    setTimeout(resetAnim, 1500);
-    const prevCard = cards.indexOf(currentCard) - 1;
-    if (prevCard === -1) {
-      setTimeout(() => delaySwitch(cards.length - 1), 600);
-    } else {
-      setTimeout(() => delaySwitch(prevCard), 600);
-    }
-  };
-
-  const nextCardHandler = () => {
-    setTimeout(() => inAnim("in-right"), 200);
-    setCardAnim("out-right");
-    setTimeout(resetAnim, 1500);
-    console.log(cards.indexOf(currentCard));
-    const nextCard = cards.indexOf(currentCard) + 1;
-    if (nextCard === cards.length) {
-      setTimeout(() => delaySwitch(0), 600);
-    } else {
-      setTimeout(() => delaySwitch(nextCard), 600);
-    }
-  };
-
-  let currentCardDisplay = (
-    <Card info={currentCard} cardAnimation={cardAnim} img={currentImg} />
-  );
-
-  return (
-    <div className="card-container">
-      <FaArrowLeft className="btn-card" onClick={prevCardHandler} />
-      {currentCardDisplay}
-      <FaArrowRight className="btn-card" onClick={nextCardHandler} />
-    </div>
-  );
+  return <div className="card-container">{project}</div>;
 };
 
 export default CardContainer;

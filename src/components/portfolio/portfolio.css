@@ -1,7 +1,6 @@
 .portfolio-wrapper {
-  height: 110vh;
+  height: 400vh;
   width: 100vw;
-  margin-top: 50px;
   background-color: rgba(245, 244, 244, 0.959);
   display: flex;
   flex-direction: column;
