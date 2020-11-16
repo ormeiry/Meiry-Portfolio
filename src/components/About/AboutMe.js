@@ -27,24 +27,21 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="about-wrapper">
-      <div className="about-container" ref={ref}>
-        <h1 className="unseen">
-          <span>A</span>bout Me
-        </h1>
-        <div className="unseen"></div>
-        <p>
-          I love People, Programming, and learning new things. Currently looking
-          for a place that has all three. I have dedicated my time and effort to
-          turn my life upside down, stopped being scared of failing, and jumped
-          headfirst into this amazing field. I finished over 240 hours of
-          professional online courses, and far more of them writing, reading,
-          and understanding code, My journey continues to this day. The hunger
-          for knowledge is growing as I learn more. All I need is a place where
-          I can grow as a developer, and surly enough my contribution will come
-          fast.
-        </p>
-      </div>
+    <div className="about-container" ref={ref}>
+      <h2 className="unseen">
+        <span>A</span>bout Me
+      </h2>
+      <div className="unseen"></div>
+      <p>
+        I love People, Programming, and learning new things. Currently looking
+        for a place that has all three. I have dedicated my time and effort to
+        turn my life upside down, stopped being scared of failing, and jumped
+        headfirst into this amazing field. I finished over 240 hours of
+        professional online courses, and far more of them writing, reading, and
+        understanding code, My journey continues to this day. The hunger for
+        knowledge is growing as I learn more. All I need is a place where I can
+        grow as a developer, and surly enough my contribution will come fast.
+      </p>
     </div>
   );
 };

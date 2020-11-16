@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import React, { useState, useEffect, useRef } from "react";
 
 import Card from "./Card";
 import data from "../../data";
@@ -16,18 +15,17 @@ import sortImgM from "../../images/projects/sortM.jpg";
 
 const CardContainer = () => {
   const [dataArr, setData] = useState(data);
-
   const screenWidth = window.screen.width;
   const changeImg = (id) => {
     switch (id) {
       case "git":
-        return screenWidth > 750 ? gitImgM : gitImg;
+        return screenWidth > 800 ? gitImgM : gitImg;
       case "it":
-        return screenWidth > 750 ? itImgM : itImg;
+        return screenWidth > 800 ? itImgM : itImg;
       case "sort":
-        return screenWidth > 750 ? sortImgM : sortImg;
+        return screenWidth > 800 ? sortImgM : sortImg;
       default:
-        return screenWidth > 750 ? contactImgM : contactImg;
+        return screenWidth > 800 ? contactImgM : contactImg;
     }
   };
 

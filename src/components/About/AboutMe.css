@@ -1,23 +1,14 @@
-.about-wrapper {
-  height: 130vh;
-  width: 100vw;
-  background: rgba(245, 244, 244, 0.959);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-
 .about-container {
-  height: 100%;
+  background: rgba(245, 244, 244, 0.959);
+  height: 130vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: #00061f;
   font-weight: 500;
+  overflow: hidden;
 }
 
 .unseen {
@@ -25,27 +16,27 @@
 }
 
 .animation-side {
-  width: 95%;
-  height: 1%;
+  width: 90%;
+  height: 0.2%;
   background-color: #4da8da;
   border-bottom: 2px solid #007cc7;
   animation: 2.5s slideinbar;
 }
 
 .animation-text {
-  margin-top: 100px;
-  height: 5%;
+  height: 0.5%;
+  margin-top: 50px;
   font-size: 3rem;
   color: #00061f;
   animation: 2.5s slideintext;
 }
 
 .about-container p {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 80%;
-  height: 70%;
-  font-size: 1.7rem;
-  line-height: 1.9rem;
+  height: 60%;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 @keyframes slideinbar {
@@ -59,32 +50,64 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 760px) {
   .about-container {
-    margin-top: 100px;
-  }
-  .about-container h1 {
-    font-size: 7rem;
+    height: 110vh;
   }
 
   .about-container p {
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    height: 60%;
+    width: 80%;
+    line-height: 3rem;
+  }
+
+  .animation-text {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+    font-size: 5rem;
+  }
+
+  @keyframes slideinbar {
+    from {
+      transform: translateX(-1200px) scale(0.1);
+    }
+  }
+
+  @keyframes slideintext {
+    from {
+      transform: translateX(1200px) scale(0.1);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-container {
+    height: 130vh;
+  }
+
+  .about-container p {
+    margin-bottom: 50px;
     margin-top: 120px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 65%;
     line-height: 3.5rem;
   }
 
   .animation-side {
-    margin-top: 10px;
     width: 90%;
-    height: 3%;
+    height: 0.5%;
   }
 
   .animation-text {
+    margin-top: 150px;
     text-align: center;
     width: 80%;
-    height: 10%;
-    font-size: 4rem;
+    height: 20%;
+    font-size: 5rem;
   }
 
   @keyframes slideinbar {

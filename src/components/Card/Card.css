@@ -8,6 +8,11 @@
   border-radius: 5%;
   overflow: hidden;
   box-shadow: -1px 2px 7px -1px #000000;
+  animation: 1s ease-in-out fade-in;
+}
+
+.unseen {
+  opacity: 0;
 }
 
 .project-image {
@@ -23,8 +28,8 @@
   justify-content: space-evenly;
   align-items: center;
   color: #eefbfb;
-  height: 70%;
-  width: 70%;
+  height: 80%;
+  width: 90%;
 }
 
 .project-links {
@@ -78,43 +83,50 @@
   color: #d4d4d4;
 }
 
-.in-right {
-  animation: 1s ease-in inright;
-}
-.out-right {
-  animation: 0.5s outright;
-}
-
-.in-left {
-  animation: 1s ease-in inleft;
-}
-.out-left {
-  animation: 0.5s outleft;
-}
-
-@keyframes inright {
+@keyframes fade-in {
   from {
-    opacity: 0;
-    transform: translateX(-500px) scale(0.5);
-  }
-}
-@keyframes outright {
-  to {
-    opacity: 0;
-    transform: translateX(500px) scale(0.5);
+    opacity: 0.4;
+    transform: translateY(500px) translateZ(500px) scale(0.6);
   }
 }
 
-@keyframes inleft {
-  from {
-    opacity: 0;
-    transform: translateX(500px) scale(0.5);
+@media screen and (min-width: 760px) {
+  .card {
+    height: 23%;
+    width: 90%;
   }
-}
-@keyframes outleft {
-  to {
-    opacity: 0;
-    transform: translateX(-500px) scale(0.5);
+
+  .project-image {
+    height: 30%;
+  }
+
+  .card-content {
+    height: 60%;
+  }
+
+  .project-links {
+    margin-top: 15px;
+  }
+
+  .project-links a {
+    padding: 1em 0;
+    font-size: 1rem;
+  }
+
+  .card-content h2 {
+    color: #4da8da;
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+
+  .card-content h4 {
+    font-size: 2em;
+  }
+
+  .card-content li {
+    font-size: 1.6em;
+    font-weight: 100;
+    margin: 10px 0;
   }
 }
 

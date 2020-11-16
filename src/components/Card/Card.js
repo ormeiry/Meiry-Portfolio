@@ -1,12 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Card.css";
 
 const Card = ({ info: { title, listItems, link, github, name }, img }) => {
+  const ref = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          console.log("card");
+
+          entry.target.classList.remove("unseen");
+          entry.target.classList.add("card");
+        }
+      },
+      {
+        threshold: [0.3],
+      }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      observer.unobserve(ref.current);
+    };
+  }, []);
+
   const ul = listItems.map((item, i) => {
     return <li key={i}>{item}</li>;
   });
   return (
-    <div className="card">
+    <div className="unseen" ref={ref}>
       <img src={img} alt="project" className="project-image" />
       <div className="project-links">
         <a href={link} target="_blank" rel="noopener">
