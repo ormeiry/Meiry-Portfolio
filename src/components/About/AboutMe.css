@@ -73,20 +73,20 @@
 
   @keyframes slideinbar {
     from {
-      transform: translateX(-1200px) scale(0.1);
+      transform: translateX(-1000px) scale(0.1);
     }
   }
 
   @keyframes slideintext {
     from {
-      transform: translateX(1200px) scale(0.1);
+      transform: translateX(1000px) scale(0.1);
     }
   }
 }
 
 @media screen and (min-width: 992px) {
   .about-container {
-    height: 130vh;
+    height: 110vh;
   }
 
   .about-container p {
@@ -98,7 +98,7 @@
   }
 
   .animation-side {
-    width: 90%;
+    width: 85%;
     height: 0.5%;
   }
 
@@ -106,7 +106,7 @@
     margin-top: 150px;
     text-align: center;
     width: 80%;
-    height: 20%;
+    height: 10%;
     font-size: 5rem;
   }
 
