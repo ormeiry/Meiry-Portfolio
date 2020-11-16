@@ -14,7 +14,7 @@ const Card = ({ info: { title, listItems, link, github, name }, img }) => {
         }
       },
       {
-        threshold: [0.3],
+        threshold: [0.4],
       }
     );
     if (ref.current) {

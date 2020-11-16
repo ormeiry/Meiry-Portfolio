@@ -3,7 +3,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Home from "./components/Home/Home";
 import AboutMe from "./components/About/AboutMe";
 import Portfolio from "./components/portfolio/Portfolio";
-import TechStack from "./components/TechStack";
+import Technologies from "./components/Technologies/Technologies";
 import Contact from "./components/Contact";
 import { FaArrowCircleUp } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ function App() {
     <Home key="Home" />,
     <AboutMe key="AboutMe" />,
     <Portfolio key="Portfolio" />,
-    <TechStack key="TechStack" />,
+    <Technologies key="Technologies" />,
     <Contact key="Contact" />,
   ];
 

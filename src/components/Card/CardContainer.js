@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import Card from "./Card";
-import data from "../../data";
+import { items } from "../../data";
 import "./CardContainer.css";
 
 import contactImg from "../../images/projects/contactkeeper.png";
@@ -14,7 +14,7 @@ import itImgM from "../../images/projects/itloggerM.jpg";
 import sortImgM from "../../images/projects/sortM.jpg";
 
 const CardContainer = () => {
-  const [dataArr, setData] = useState(data);
+  const [dataArr, setData] = useState(items);
   const screenWidth = window.screen.width;
   const changeImg = (id) => {
     switch (id) {
@@ -31,7 +31,7 @@ const CardContainer = () => {
 
   const project = dataArr.map((project, i) => {
     let img = changeImg(project.id);
-    return <Card info={data[i]} img={img} key={project.id} />;
+    return <Card info={dataArr[i]} img={img} key={project.id} />;
   });
 
   return <div className="card-container">{project}</div>;

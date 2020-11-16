@@ -194,30 +194,4 @@
     margin: 10px 0;
     font-size: 1.5em;
   }
-
-  @keyframes inright {
-    from {
-      opacity: 0;
-      transform: translateX(-1500px) scale(0.5);
-    }
-  }
-  @keyframes outright {
-    to {
-      opacity: 0;
-      transform: translateX(1500px) scale(0.5);
-    }
-  }
-
-  @keyframes inleft {
-    from {
-      opacity: 0;
-      transform: translateX(1500px) scale(0.5);
-    }
-  }
-  @keyframes outleft {
-    to {
-      opacity: 0;
-      transform: translateX(-1500px) scale(0.5);
-    }
-  }
 }
