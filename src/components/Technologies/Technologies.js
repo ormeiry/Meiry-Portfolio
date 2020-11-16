@@ -13,8 +13,8 @@ const Technologies = () => {
         learning to this day.
       </p>
       <div className="tech-grid">
-        {techs.map((techImg) => {
-          return <Tech techImg={techImg} />;
+        {techs.map((techImg, i) => {
+          return <Tech techImg={techImg} key={i} />;
         })}
       </div>
     </div>

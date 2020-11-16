@@ -7,8 +7,6 @@ const Card = ({ info: { title, listItems, link, github, name }, img }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          console.log("card");
-
           entry.target.classList.remove("unseen");
           entry.target.classList.add("card");
         }

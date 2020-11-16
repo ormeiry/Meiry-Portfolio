@@ -7,7 +7,6 @@ const AboutMe = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          console.log("about me");
           entry.target.firstChild.classList.remove("unseen");
           entry.target.children[1].classList.remove("unseen");
           entry.target.children[1].classList.add("animation-side");
