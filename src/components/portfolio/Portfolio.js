@@ -1,32 +1,20 @@
-import React, { useRef, useEffect } from "react";
+import React from 'react';
 
-import CardContainer from "../Card/CardContainer";
-import "./portfolio.css";
+import CardContainer from '../Card/CardContainer';
+import { useObserver } from '../../hooks/useObserver';
+import './portfolio.css';
 
 const Portfolio = () => {
-  const ref = useRef();
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          console.log("portfolio");
-          entry.target.firstChild.classList.add("animation");
-        }
-      },
-      {
-        threshold: [0.1],
-      }
-    );
-    if (ref.current) {
-      observer.observe(ref.current);
+  const instructions = ([entry]) => {
+    if (entry.isIntersecting) {
+      entry.target.firstChild.classList.add('animation');
     }
-    return () => {
-      observer.unobserve(ref.current);
-    };
-  }, []);
+  };
+  const options = { threshold: [0.1] };
+  const observerRef = useObserver(instructions, options);
 
   return (
-    <div className="portfolio-wrapper" ref={ref}>
+    <div className='portfolio-wrapper' ref={observerRef}>
       <h1>My Projects</h1>
       <CardContainer />
     </div>

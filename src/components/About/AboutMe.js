@@ -1,36 +1,25 @@
-import React, { useEffect, useRef } from "react";
-import "./AboutMe.css";
+import React from 'react';
+import './AboutMe.css';
+
+import { useObserver } from '../../hooks/useObserver';
 
 const AboutMe = () => {
-  const ref = useRef();
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.firstChild.classList.remove("unseen");
-          entry.target.children[1].classList.remove("unseen");
-          entry.target.children[1].classList.add("animation-side");
-          entry.target.firstChild.classList.add("animation-text");
-        }
-      },
-      {
-        threshold: [0.1],
-      }
-    );
-    if (ref.current) {
-      observer.observe(ref.current);
+  const instructions = ([entry]) => {
+    if (entry.isIntersecting) {
+      entry.target.firstChild.classList.remove('unseen');
+      entry.target.children[1].classList.remove('unseen');
+      entry.target.children[1].classList.add('animation-side');
+      entry.target.firstChild.classList.add('animation-text');
     }
-    return () => {
-      observer.unobserve(ref.current);
-    };
-  }, []);
-
+  };
+  const options = { threshold: [0.1] };
+  const observerRef = useObserver(instructions, options);
   return (
-    <div className="about-container" ref={ref}>
-      <h2 className="unseen">
+    <div className='about-container' ref={observerRef}>
+      <h2 className='unseen'>
         <span>A</span>bout Me
       </h2>
-      <div className="unseen"></div>
+      <div className='unseen'></div>
       <p>
         I love People, Programming, and learning new things. Currently looking
         for a place that has all three. I have dedicated my time and effort to
