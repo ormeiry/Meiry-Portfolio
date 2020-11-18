@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-  height: 370vh;
+  height: 320vh;
   width: 100vw;
   background-color: rgba(245, 244, 244, 0.959);
   display: flex;
@@ -11,7 +11,7 @@
 .portfolio-wrapper h1 {
   margin-top: 100px;
   margin-bottom: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #00061f;
 }
 
@@ -42,9 +42,9 @@
   }
 
   .portfolio-wrapper h1 {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 0px;
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -54,8 +54,8 @@
   }
 
   .portfolio-wrapper h1 {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 0px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }

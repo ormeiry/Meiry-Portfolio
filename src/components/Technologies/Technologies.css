@@ -14,8 +14,10 @@
   gap: 15px;
 }
 
-.tech-container h1 {
-  font-size: 3rem;
+.tech-container h2 {
+  width: 60%;
+  margin-top: 100px;
+  font-size: 2.5rem;
 }
 
 .tech-container p {
@@ -29,12 +31,29 @@
     gap: 20px;
   }
 
-  .tech-container h1 {
-    font-size: 5rem;
+  .tech-container h2 {
+    font-size: 3.7rem;
   }
 
   .tech-container p {
     width: 80%;
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tech-grid {
+    width: 55%;
+    grid-auto-rows: 100px;
+    gap: 20px;
+  }
+
+  .tech-container h2 {
+    font-size: 3.7rem;
+  }
+
+  .tech-container p {
+    width: 80%;
+    font-size: 2rem;
   }
 }

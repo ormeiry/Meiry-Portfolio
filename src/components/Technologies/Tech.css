@@ -39,12 +39,12 @@
   }
 
   .tech-img {
-    max-height: 100px;
+    max-height: 90px;
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 992px) {
   .tech-img {
-    max-height: 90px;
+    max-height: 55px;
   }
 }
