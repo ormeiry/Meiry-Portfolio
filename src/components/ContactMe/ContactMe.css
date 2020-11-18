@@ -1,0 +1,103 @@
+.contact-me {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #12232e;
+  height: 550px;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: -1px 2px 7px -1px #000000;
+  border-radius: 5%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.contact-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #12232e inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #eefbfb;
+}
+
+.contact-form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #12232e inset; /*your box-shadow*/
+  -webkit-text-fill-color: #eefbfb;
+}
+
+.contact-form input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #4da8da;
+  width: 80%;
+  font-size: 18px;
+  color: #eefbfb;
+  background: transparent;
+}
+.contact-form input:focus {
+  outline: 1px solid #4da8da;
+}
+
+.contact-form textarea {
+  margin-top: 20px;
+  padding: 8px;
+  height: 50%;
+  width: 80%;
+  font-size: 18px;
+  background: transparent;
+  color: #eefbfb;
+  border: none;
+  border-bottom: 1px solid #4da8da;
+}
+
+.contact-form textarea:focus {
+  outline: 1px solid #4da8da;
+}
+
+.contact-form textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #12232e inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #eefbfb;
+}
+
+.contact-form textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #12232e inset; /*your box-shadow*/
+  -webkit-text-fill-color: #eefbfb;
+}
+
+.err-text {
+  margin: 0;
+  color: #eefbfb;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 760px) {
+  .contact-form input {
+    font-size: 22px;
+  }
+  .contact-form input:focus {
+    outline: 1px solid #4da8da;
+  }
+
+  .contact-form textarea {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-form {
+    height: 60%;
+    width: 40%;
+
+    box-shadow: -1px 2px 7px -1px #000000;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+}
