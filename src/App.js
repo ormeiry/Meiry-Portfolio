@@ -25,9 +25,12 @@ function App() {
     <div className="app">
       {screensArr.map((i, index) => i)}
       <Message />
-      <FaArrowCircleUp className={"btn-top"} onClick={backToTopHandler}>
-        Back To Top
-      </FaArrowCircleUp>
+      <div className="top-container">
+        <FaArrowCircleUp
+          className="btn-top"
+          onClick={backToTopHandler}
+        ></FaArrowCircleUp>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
+:root {
+  --primary: #12232e;
+  --secondary: #4da8da;
+  --w-text: #eefbfb;
+  --mobile-p: 1.5rem;
+  --pad-p: 2.1rem;
+  --desktop-p: 2rem;
+  --mobile-title: 2.5rem;
+  --pad-title: 3.5rem;
+  --desktop-title: 3.7rem;
+}
+
 body {
   background-color: rgba(245, 244, 244, 0.959);
   font-family: "Playfair Display", serif;
@@ -16,13 +28,35 @@ code {
     monospace;
 }
 
+.top-container {
+  margin: 30px 0px;
+  width: 100vw;
+  text-align: center;
+}
+
 .btn-top {
   transform: scale(2);
-  cursor: pointer;
-  animation: fadeIn 0.3s;
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-radius: 50%;
+  box-shadow: -1px 2px 3px -1px #000000;
 }
 
 .btn-top:hover {
   cursor: pointer;
-  transform: scale(2.2);
+  animation: 1s ease-in-out top infinite;
+}
+
+@keyframes top {
+  0% {
+    transform: translateY(0px) scale(2);
+  }
+
+  50% {
+    transform: translateY(-5px) scale(2.2);
+  }
+
+  100% {
+    transform: translateY(0px) scale(2);
+  }
 }

@@ -17,43 +17,57 @@ const ContactMe = () => {
   const { register, handleSubmit, errors, reset } = useForm({
     mode: "onBlur",
   });
-  const sendEmail = (data) => {
-    // emailjs
-    //   .sendForm(
-    //     process.env.REACT_APP_SERVICE_ID,
-    //     process.env.REACT_APP_TEMPLATE_ID,
-    //     formRef.current
-    //   )
-    //   .then(
-    //     (result) => {
-    //       reset();
-    //       toast.info("Thank You!", {
-    //         position: "bottom-center",
-    //         autoClose: 3000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: true,
-    //         draggable: true,
-    //         progress: undefined,
-    //       });
-    //     },
-    //     (error) => {
-    //       toast.error("Something went wrong... Please try again.", {
-    //         position: "bottom-center",
-    //         autoClose: 3000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: true,
-    //         draggable: true,
-    //         progress: undefined,
-    //       });
-    //     }
-    //   );
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current
+      )
+      .then(
+        (result) => {
+          reset();
+          toast.info("Thank You!", {
+            position: "bottom-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        },
+        (error) => {
+          toast.error("Something went wrong... Please try again.", {
+            position: "bottom-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+      );
   };
 
   return (
     <div className="contact-me">
       <h2>Contact Me</h2>
+      <p>You can do it via</p>
+      <div className="contact-icons">
+        <a
+          href="https://www.linkedin.com/in/or-meiry-618b3719b/"
+          target="_blank"
+          rel="noopener"
+        >
+          <i className="fab fa-linkedin fa-3x"></i>
+        </a>
+        <a href="mailto: ormeiry2411@gmail.com">
+          <i className="fa fa-envelope fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <p>Or leave a message</p>
       <form
         className="contact-form"
         onSubmit={handleSubmit(sendEmail)}
@@ -91,7 +105,9 @@ const ContactMe = () => {
             Please enter some content to the message.
           </h4>
         )}
-        <input type="submit" value="Send" />
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
       </form>
     </div>
   );

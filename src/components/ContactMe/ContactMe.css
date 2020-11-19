@@ -8,15 +8,33 @@
 
 .contact-me h2 {
   margin-top: 95px;
-  margin-bottom: 60px;
-  font-size: 2.5rem;
+  margin-bottom: 2px;
+  font-size: var(--mobile-title);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-icons i {
+  color: var(--secondary);
+  background-color: var(--w-text);
+}
+
+.contact-me p {
+  margin: 15px 0px;
+  font-size: var(--mobile-p);
 }
 
 .contact-form {
-  background-color: #12232e;
-  height: 550px;
+  background-color: var(--primary);
+  height: 480px;
   width: 80%;
-  padding: 10px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -28,27 +46,27 @@
 }
 
 .contact-form input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px #12232e inset; /* Change the color to your own background color */
-  -webkit-text-fill-color: #eefbfb;
+  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px #12232e inset; /*your box-shadow*/
-  -webkit-text-fill-color: #eefbfb;
+  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /*your box-shadow*/
+  -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form input {
   margin-bottom: 20px;
   padding: 8px;
   border: none;
-  border-bottom: 1px solid #4da8da;
+  border-bottom: 1px solid var(--secondary);
   width: 80%;
   font-size: 18px;
-  color: #eefbfb;
+  color: var(--w-text);
   background: transparent;
 }
 .contact-form input:focus {
-  outline: 1px solid #4da8da;
+  outline: 1px solid var(--secondary);
 }
 
 .contact-form textarea {
@@ -58,28 +76,47 @@
   width: 80%;
   font-size: 18px;
   background: transparent;
-  color: #eefbfb;
+  color: var(--w-text);
   border: none;
-  border-bottom: 1px solid #4da8da;
+  border-bottom: 1px solid var(--secondary);
 }
 
 .contact-form textarea:focus {
-  outline: 1px solid #4da8da;
+  outline: 1px solid var(--secondary);
 }
 
 .contact-form textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px #12232e inset; /* Change the color to your own background color */
-  -webkit-text-fill-color: #eefbfb;
+  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px #12232e inset; /*your box-shadow*/
-  -webkit-text-fill-color: #eefbfb;
+  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /*your box-shadow*/
+  -webkit-text-fill-color: var(--w-text);
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 10%;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px solid var(--w-text);
+}
+
+.contact-form i {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 .err-text {
   margin: 0;
-  color: #eefbfb;
+  color: var(--w-text);
   font-size: 14px;
 }
 
@@ -90,8 +127,21 @@
   }
   .contact-me h2 {
     margin-top: 120px;
-    margin-bottom: 70px;
-    font-size: 3.5rem;
+    margin-bottom: 0px;
+    font-size: var(--pad-title);
+  }
+
+  .contact-icons {
+    width: 50%;
+  }
+
+  .contact-icons i {
+    color: var(--secondary);
+    background-color: var(--w-text);
+  }
+
+  .contact-me p {
+    font-size: var(--pad-p);
   }
 
   .contact-form input {
@@ -99,7 +149,7 @@
   }
 
   .contact-form input:focus {
-    outline: 1px solid #4da8da;
+    outline: 1px solid var(--secondary);
   }
 
   .contact-form textarea {
@@ -108,7 +158,7 @@
 
   .err-text {
     margin: 0;
-    color: #eefbfb;
+    color: var(--w-text);
     font-size: 17px;
     font-weight: 300;
   }
@@ -122,7 +172,25 @@
 
   .contact-me h2 {
     margin-top: 120px;
-    margin-bottom: 70px;
-    font-size: 3.7rem;
+    margin-bottom: 0px;
+    font-size: var(--desktop-title);
+  }
+
+  .contact-icons {
+    width: 30%;
+  }
+
+  .contact-icons i {
+    color: var(--secondary);
+    background-color: var(--w-text);
+  }
+
+  .contact-icons i:hover {
+    color: var(--primary);
+    background-color: var(--w-text);
+  }
+
+  .contact-me p {
+    font-size: var(--desktop-p);
   }
 }

@@ -17,7 +17,7 @@
 .animation-side {
   width: 85%;
   height: 0.2%;
-  background-color: #4da8da;
+  background-color: var(--secondary);
   border-bottom: 2px solid #007cc7;
   animation: 2.5s slideinbar;
 }
@@ -26,7 +26,7 @@
   height: 0.5%;
   margin-top: 50px;
   margin-bottom: 10px;
-  font-size: 2.5rem;
+  font-size: var(--mobile-title);
   color: #00061f;
   animation: 2.5s slideintext;
 }
@@ -36,7 +36,7 @@
   margin-bottom: 50px;
   width: 80%;
   height: 60%;
-  font-size: 1.5rem;
+  font-size: var(--mobile-p);
   line-height: 1.8rem;
 }
 
@@ -59,7 +59,7 @@
   .about-container p {
     margin-top: 0px;
     margin-bottom: 0;
-    font-size: 2.1rem;
+    font-size: var(--pad-p);
     height: 60%;
     width: 70%;
     line-height: 2.7rem;
@@ -69,7 +69,7 @@
     margin-bottom: 20px;
     text-align: center;
     width: 80%;
-    font-size: 3.5rem;
+    font-size: var(--pad-title);
   }
 
   @keyframes slideinbar {
@@ -93,7 +93,7 @@
   .about-container p {
     margin-bottom: 50px;
     margin-top: 110px;
-    font-size: 2rem;
+    font-size: var(--desktop-p);
     width: 60%;
     line-height: 3.2rem;
   }
@@ -108,7 +108,7 @@
     text-align: center;
     width: 80%;
     height: 10%;
-    font-size: 4rem;
+    font-size: var(--desktop-title);
   }
 
   @keyframes slideinbar {

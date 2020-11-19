@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #12232e;
+  background-color: var(--primary);
   border-radius: 5%;
   overflow: hidden;
   box-shadow: -1px 2px 7px -1px #000000;
@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #eefbfb;
+  color: var(--w-text);
   height: 80%;
   width: 90%;
 }
@@ -35,7 +35,7 @@
 .project-links {
   margin-top: 25px;
   width: 100%;
-  background: #4da8da;
+  background: var(--secondary);
   overflow: hidden;
   display: flex;
   justify-content: space-around;
@@ -45,12 +45,12 @@
 .project-links a {
   padding: 0.5em 0;
   text-decoration: none;
-  color: #eefbfb;
+  color: var(--w-text);
   font-size: 0.7rem;
 }
 
 .card-content h2 {
-  color: #4da8da;
+  color: var(--secondary);
   font-size: 2em;
   font-weight: 600;
   margin: 0;
@@ -114,8 +114,8 @@
   }
 
   .card-content h2 {
-    color: #4da8da;
-    font-size: 3.5em;
+    color: var(--secondary);
+    font-size: var(--pad-title);
     font-weight: 600;
   }
 
@@ -172,7 +172,7 @@
   .project-links a {
     padding: 0 0.5em;
     text-decoration: none;
-    color: #eefbfb;
+    color: var(--w-text);
     font-size: 1rem;
   }
 

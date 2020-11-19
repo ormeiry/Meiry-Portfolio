@@ -17,12 +17,12 @@
 .tech-container h2 {
   width: 60%;
   margin-top: 100px;
-  font-size: 2.5rem;
+  font-size: var(--mobile-title);
 }
 
 .tech-container p {
   width: 80%;
-  font-size: 1.5rem;
+  font-size: var(--mobile-p);
 }
 
 @media screen and (min-width: 760px) {
@@ -32,12 +32,12 @@
   }
 
   .tech-container h2 {
-    font-size: 3.7rem;
+    font-size: var(--pad-title);
   }
 
   .tech-container p {
     width: 80%;
-    font-size: 2rem;
+    font-size: var(--pad-p);
   }
 }
 
@@ -49,11 +49,11 @@
   }
 
   .tech-container h2 {
-    font-size: 3.7rem;
+    font-size: var(--desktop-title);
   }
 
   .tech-container p {
     width: 80%;
-    font-size: 2rem;
+    font-size: var(--desktop-p);
   }
 }
