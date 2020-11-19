@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-  height: 320vh;
+  height: 390vh;
   width: 100vw;
   background-color: rgba(245, 244, 244, 0.959);
   display: flex;
@@ -38,7 +38,7 @@
 }
 @media screen and (min-width: 760px) {
   .portfolio-wrapper {
-    height: 370vh;
+    height: 420vh;
   }
 
   .portfolio-wrapper h1 {
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 992px) {
   .portfolio-wrapper {
-    height: 300vh;
+    height: 350vh;
   }
 
   .portfolio-wrapper h1 {

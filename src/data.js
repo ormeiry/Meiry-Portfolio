@@ -48,8 +48,19 @@ export const items = [
     link: "https://git-user-web-app.netlify.app/",
     github: "https://github.com/ormeiry/App-Git-User",
     name: "Git User",
-    img: "/projects/gituser.png",
     id: "git",
+  },
+  {
+    title: "This is me!",
+    listItems: [
+      "React with hooks for the client side.",
+      "CSS animations, JS libraries for the form and mailing.",
+      "Get to know me, see my projects and contact me!.",
+    ],
+    link: "localhost:3000",
+    github: "https://github.com/ormeiry/new-portfolio",
+    name: "OR's Portfolio",
+    id: "portfolio",
   },
 ];
 

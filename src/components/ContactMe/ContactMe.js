@@ -78,7 +78,7 @@ const ContactMe = () => {
         />
         {errors.email && (
           <h4 className="err-text">
-            Please enter an email adress I can write back to.
+            Please enter an email address I can write back to.
           </h4>
         )}
         <textarea
