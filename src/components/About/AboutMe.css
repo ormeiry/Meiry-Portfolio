@@ -91,7 +91,6 @@
   }
 
   .about-container p {
-    margin-bottom: 50px;
     margin-top: 110px;
     font-size: var(--desktop-p);
     width: 60%;
