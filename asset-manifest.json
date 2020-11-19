@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Meiry-Portfolio/static/css/main.46283080.chunk.css",
+    "main.js": "/Meiry-Portfolio/static/js/main.5e5c21c6.chunk.js",
+    "main.js.map": "/Meiry-Portfolio/static/js/main.5e5c21c6.chunk.js.map",
+    "runtime-main.js": "/Meiry-Portfolio/static/js/runtime-main.3f932824.js",
+    "runtime-main.js.map": "/Meiry-Portfolio/static/js/runtime-main.3f932824.js.map",
+    "static/css/2.ccc6f86f.chunk.css": "/Meiry-Portfolio/static/css/2.ccc6f86f.chunk.css",
+    "static/js/2.510d8cf3.chunk.js": "/Meiry-Portfolio/static/js/2.510d8cf3.chunk.js",
+    "static/js/2.510d8cf3.chunk.js.map": "/Meiry-Portfolio/static/js/2.510d8cf3.chunk.js.map",
+    "index.html": "/Meiry-Portfolio/index.html",
+    "static/css/2.ccc6f86f.chunk.css.map": "/Meiry-Portfolio/static/css/2.ccc6f86f.chunk.css.map",
+    "static/css/main.46283080.chunk.css.map": "/Meiry-Portfolio/static/css/main.46283080.chunk.css.map",
+    "static/js/2.510d8cf3.chunk.js.LICENSE.txt": "/Meiry-Portfolio/static/js/2.510d8cf3.chunk.js.LICENSE.txt",
+    "static/media/bgVideo.41584ed5.mp4": "/Meiry-Portfolio/static/media/bgVideo.41584ed5.mp4",
+    "static/media/contactkeeper.fc374709.png": "/Meiry-Portfolio/static/media/contactkeeper.fc374709.png",
+    "static/media/contactkeeperM.17849260.jpg": "/Meiry-Portfolio/static/media/contactkeeperM.17849260.jpg",
+    "static/media/gituser.52d0e5c0.png": "/Meiry-Portfolio/static/media/gituser.52d0e5c0.png",
+    "static/media/gituserM.9055e864.jpg": "/Meiry-Portfolio/static/media/gituserM.9055e864.jpg",
+    "static/media/itlogger.fe4d9c31.png": "/Meiry-Portfolio/static/media/itlogger.fe4d9c31.png",
+    "static/media/itloggerM.0ddc0e9d.jpg": "/Meiry-Portfolio/static/media/itloggerM.0ddc0e9d.jpg",
+    "static/media/portfolio.21af8491.png": "/Meiry-Portfolio/static/media/portfolio.21af8491.png",
+    "static/media/portfolioM.21cd17ba.jpg": "/Meiry-Portfolio/static/media/portfolioM.21cd17ba.jpg",
+    "static/media/sort.59a63716.png": "/Meiry-Portfolio/static/media/sort.59a63716.png",
+    "static/media/sortM.3e7afee3.jpg": "/Meiry-Portfolio/static/media/sortM.3e7afee3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f932824.js",
+    "static/css/2.ccc6f86f.chunk.css",
+    "static/js/2.510d8cf3.chunk.js",
+    "static/css/main.46283080.chunk.css",
+    "static/js/main.5e5c21c6.chunk.js"
+  ]
+}
