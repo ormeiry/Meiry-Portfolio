@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 760px) {
   .about-container {
-    height: 110vh;
+    height: 100vh;
   }
 
   .about-container p {
@@ -94,7 +94,7 @@
     margin-top: 110px;
     font-size: var(--desktop-p);
     width: 60%;
-    line-height: 3.2rem;
+    line-height: 3rem;
   }
 
   .animation-side {
