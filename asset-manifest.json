@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Meiry-Portfolio/static/css/main.4d5ef12a.chunk.css",
-    "main.js": "/Meiry-Portfolio/static/js/main.3c4e2973.chunk.js",
-    "main.js.map": "/Meiry-Portfolio/static/js/main.3c4e2973.chunk.js.map",
+    "main.js": "/Meiry-Portfolio/static/js/main.437c1de2.chunk.js",
+    "main.js.map": "/Meiry-Portfolio/static/js/main.437c1de2.chunk.js.map",
     "runtime-main.js": "/Meiry-Portfolio/static/js/runtime-main.3f932824.js",
     "runtime-main.js.map": "/Meiry-Portfolio/static/js/runtime-main.3f932824.js.map",
     "static/css/2.ccc6f86f.chunk.css": "/Meiry-Portfolio/static/css/2.ccc6f86f.chunk.css",
@@ -12,8 +12,8 @@
     "static/css/2.ccc6f86f.chunk.css.map": "/Meiry-Portfolio/static/css/2.ccc6f86f.chunk.css.map",
     "static/css/main.4d5ef12a.chunk.css.map": "/Meiry-Portfolio/static/css/main.4d5ef12a.chunk.css.map",
     "static/js/2.8a0d0b67.chunk.js.LICENSE.txt": "/Meiry-Portfolio/static/js/2.8a0d0b67.chunk.js.LICENSE.txt",
-    "static/media/bgStart.f1045516.png": "/Meiry-Portfolio/static/media/bgStart.f1045516.png",
-    "static/media/bgVideo.41584ed5.mp4": "/Meiry-Portfolio/static/media/bgVideo.41584ed5.mp4",
+    "static/media/bgStart.02280d8e.png": "/Meiry-Portfolio/static/media/bgStart.02280d8e.png",
+    "static/media/bgVideo.bb71cc0d.mp4": "/Meiry-Portfolio/static/media/bgVideo.bb71cc0d.mp4",
     "static/media/contactkeeper.fc374709.png": "/Meiry-Portfolio/static/media/contactkeeper.fc374709.png",
     "static/media/contactkeeperM.17849260.jpg": "/Meiry-Portfolio/static/media/contactkeeperM.17849260.jpg",
     "static/media/gituser.52d0e5c0.png": "/Meiry-Portfolio/static/media/gituser.52d0e5c0.png",
@@ -30,6 +30,6 @@
     "static/css/2.ccc6f86f.chunk.css",
     "static/js/2.8a0d0b67.chunk.js",
     "static/css/main.4d5ef12a.chunk.css",
-    "static/js/main.3c4e2973.chunk.js"
+    "static/js/main.437c1de2.chunk.js"
   ]
 }
