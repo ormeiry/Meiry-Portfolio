@@ -6,26 +6,28 @@ import bgStart from '../../images/bgStart.png';
 import './Home.css';
 
 const Home = () => {
-  const [bg, setBg] = useState(bgStart);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setBg(bgVideo);
+  const changebgHandler = () => {
     setLoading(false);
-  }, []);
+  };
 
   let content = loading ? (
-    <img src={bg} alt='bg' className='bg' />
+    <img src={bgStart} alt='bg' className='bg' />
   ) : (
     <video className='bg' autoPlay loop muted>
-      <source src={bg} type='video/mp4' />
+      <source src={bgVideo} type='video/mp4' />
     </video>
   );
 
   return (
     <div className='home-body'>
       {content}
-      <HomeText name='OR MEIRY' desc='Full Stack Developer' />
+      <HomeText
+        name='OR MEIRY'
+        desc='Full Stack Developer'
+        changeBg={changebgHandler}
+      />
     </div>
   );
 };
