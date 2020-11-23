@@ -22,7 +22,6 @@ const Home = () => {
     </video>
   );
 
-  console.log(content);
   return (
     <div className='home-body'>
       {content}
