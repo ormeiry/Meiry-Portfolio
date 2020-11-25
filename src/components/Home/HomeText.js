@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './HomeText.css';
 
-const HomeText = ({ name, desc, changeBg }) => {
+const HomeText = ({ name, desc }) => {
   const [nameText, setNameText] = useState('');
   const [descText, setDescText] = useState('');
   const [iconsClass, setIconsClass] = useState('unseen');
@@ -21,12 +21,6 @@ const HomeText = ({ name, desc, changeBg }) => {
       setIconsClass('icons-animation');
     }
   }, [descText, desc]);
-
-  useEffect(() => {
-    if (nameText.length === 0) {
-      changeBg();
-    }
-  }, [nameText, name]);
 
   const displayText = (name, desc) => {
     const nameArr = name.split('');
