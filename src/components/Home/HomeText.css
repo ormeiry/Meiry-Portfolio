@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   text-shadow: -1px 1px 1px var(--primary);
-  color: var(--primary);
+  color: var(--secondary);
   z-index: 6;
 }
 

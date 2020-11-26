@@ -1,124 +1,108 @@
 .about-container {
-  background: rgba(245, 244, 244, 0.959);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #00061f;
+  color: var(--secondary);
   font-weight: 500;
   overflow: hidden;
+  position: relative;
 }
 
-.unseen {
-  opacity: 0;
+.about-wave {
+  position: absolute;
+  width: 200%;
+  left: 0;
+  top: 0;
 }
 
-.animation-side {
-  width: 85%;
-  height: 0.2%;
-  background-color: var(--secondary);
-  border-bottom: 2px solid #007cc7;
-  animation: 2.5s slideinbar;
+.about-me-svg {
+  position: absolute;
+  height: 30%;
+  width: 28%;
+  top: 0px;
+  left: 35px;
+  z-index: 1000;
 }
 
-.animation-text {
-  height: 0.5%;
-  margin-top: 50px;
-  margin-bottom: 10px;
+.title {
+  margin-top: 115px;
+  margin-left: 90px;
+  margin-bottom: 0px;
   font-size: var(--mobile-title);
-  color: #00061f;
-  animation: 2.5s slideintext;
+}
+
+.title span {
+  color: var(--third);
 }
 
 .about-container p {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 80%;
-  height: 60%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 68%;
   font-size: var(--mobile-p);
   line-height: 1.8rem;
 }
 
-@keyframes slideinbar {
-  from {
-    transform: translateX(-400px) scale(0.1);
-  }
-}
-@keyframes slideintext {
-  from {
-    transform: translateX(400px) scale(0.1);
-  }
-}
-
 @media screen and (min-width: 760px) {
-  .about-container {
-    height: 100vh;
+  .about-wave {
+    width: 210%;
   }
 
-  .about-container p {
-    margin-top: 0px;
-    margin-bottom: 0;
-    font-size: var(--pad-p);
-    height: 60%;
-    width: 70%;
-    line-height: 2.7rem;
+  .about-me-svg {
+    position: absolute;
+    height: 40%;
+    left: 90px;
   }
 
-  .animation-text {
+  .title {
+    margin-top: 240px;
     margin-bottom: 20px;
+    margin-left: 250px;
     text-align: center;
-    width: 80%;
     font-size: var(--pad-title);
   }
 
-  @keyframes slideinbar {
-    from {
-      transform: translateX(-1000px) scale(0.1);
-    }
-  }
-
-  @keyframes slideintext {
-    from {
-      transform: translateX(1000px) scale(0.1);
-    }
+  .about-container p {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    font-size: var(--pad-p);
+    width: 75%;
+    line-height: 2.7rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .about-container {
-    height: 110vh;
+    align-items: flex-end;
   }
 
-  .about-container p {
-    margin-top: 110px;
-    font-size: var(--desktop-p);
+  .about-wave {
+    width: 180%;
+  }
+
+  .about-me-svg {
+    position: absolute;
+    height: 80%;
+    width: 30%;
+    left: 90px;
+  }
+
+  .title {
     width: 60%;
-    line-height: 3rem;
-  }
-
-  .animation-side {
-    width: 75%;
-    height: 0.5%;
-  }
-
-  .animation-text {
-    margin-top: 150px;
+    margin-top: 450px;
+    margin-right: 80px;
     text-align: center;
-    width: 80%;
-    height: 10%;
     font-size: var(--desktop-title);
   }
 
-  @keyframes slideinbar {
-    from {
-      transform: translateX(-1200px) scale(0.1);
-    }
-  }
-
-  @keyframes slideintext {
-    from {
-      transform: translateX(1200px) scale(0.1);
-    }
+  .about-container p {
+    margin-top: 50px;
+    margin-bottom: 300px;
+    margin-right: 100px;
+    font-size: var(--desktop-p);
+    width: 55%;
+    line-height: 3rem;
   }
 }

@@ -1,25 +1,28 @@
-import React from 'react';
-import './AboutMe.css';
+import React from "react";
+import "./AboutMe.css";
 
-import { useObserver } from '../../hooks/useObserver';
+import { useObserver } from "../../hooks/useObserver";
+import { ReactComponent as Wave } from "../../images/aboutwave.svg";
+import { ReactComponent as AboutMeSVG } from "../../images/aboutmeSVG.svg";
 
 const AboutMe = () => {
-  const instructions = ([entry]) => {
-    if (entry.isIntersecting) {
-      entry.target.firstChild.classList.remove('unseen');
-      entry.target.children[1].classList.remove('unseen');
-      entry.target.children[1].classList.add('animation-side');
-      entry.target.firstChild.classList.add('animation-text');
-    }
-  };
-  const options = { threshold: [0.1] };
-  const observerRef = useObserver(instructions, options);
+  // const instructions = ([entry]) => {
+  //   if (entry.isIntersecting) {
+  //     entry.target.children[2].classList.remove("unseen");
+  //     entry.target.children[3].classList.remove("unseen");
+  //     entry.target.children[2].classList.add("animation-side");
+  //     entry.target.children[3].classList.add("animation-text");
+  //   }
+  // };
+  // const options = { threshold: [0.1] };
+  // const observerRef = useObserver(instructions, options);
   return (
-    <div className='about-container' ref={observerRef}>
-      <h2 className='unseen'>
+    <div className="about-container">
+      <Wave className="about-wave" />
+      <AboutMeSVG className="about-me-svg" />
+      <h2 className="title">
         <span>A</span>bout Me
       </h2>
-      <div className='unseen'></div>
       <p>
         I love People, Programming, and learning new things. Currently looking
         for a place that has all three. I have dedicated my time and effort to

@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 :root {
   --primary: #12232e;
   --secondary: #074e77;
   --third: #4da8da;
   --w-text: #eefbfb;
-  --mobile-p: 1.2rem;
-  --pad-p: 1.7rem;
+  --mobile-p: 1.1rem;
+  --pad-p: 1.9rem;
   --desktop-p: 1.8rem;
   --mobile-title: 2.2rem;
-  --pad-title: 3rem;
+  --pad-title: 3.3rem;
   --desktop-title: 3.3rem;
 }
 
 body {
   background-color: rgba(245, 244, 244, 0.959);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -25,7 +25,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 

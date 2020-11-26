@@ -10,6 +10,7 @@
   margin-top: 95px;
   margin-bottom: 2px;
   font-size: var(--mobile-title);
+  color: var(--secondary);
 }
 
 .contact-icons {
@@ -21,7 +22,7 @@
 }
 
 .contact-icons i {
-  color: var(--secondary);
+  color: var(--third);
   background-color: var(--w-text);
 }
 
@@ -111,7 +112,6 @@
 
 .contact-form i {
   background-color: var(--secondary);
-  color: var(--primary);
 }
 
 .err-text {
@@ -136,7 +136,6 @@
   }
 
   .contact-icons i {
-    color: var(--secondary);
     background-color: var(--w-text);
   }
 
@@ -181,12 +180,11 @@
   }
 
   .contact-icons i {
-    color: var(--secondary);
     background-color: var(--w-text);
   }
 
   .contact-icons i:hover {
-    color: var(--primary);
+    color: var(--secondary);
     background-color: var(--w-text);
   }
 

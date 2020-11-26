@@ -1,7 +1,6 @@
 .portfolio-wrapper {
   height: 390vh;
   width: 100vw;
-  background-color: rgba(245, 244, 244, 0.959);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,7 +11,7 @@
   margin-top: 100px;
   margin-bottom: 0;
   font-size: var(--mobile-title);
-  color: #00061f;
+  color: var(--secondary);
 }
 
 .animation {

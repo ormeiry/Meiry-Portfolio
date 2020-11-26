@@ -10,9 +10,9 @@
 
 .bg {
   height: 40%;
-  width: 75%;
+  width: 60%;
   position: absolute;
-  bottom: 0px;
+  bottom: 28px;
   z-index: 1000;
 }
 
@@ -20,21 +20,17 @@
   width: 450%;
   position: absolute;
   bottom: 0;
-  left: 0;
-  /* z-index: 1000; */
+  right: 0;
 }
 
 @media screen and (min-width: 760px) {
   .bg {
-    height: 55%;
-    width: 65%;
+    height: 45%;
+    width: 60%;
   }
 
   .bg-wave {
-    width: 400%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    width: 350%;
   }
 }
 
@@ -47,9 +43,6 @@
 
   .bg-wave {
     width: 150%;
-    position: absolute;
-    bottom: 0;
     left: 0;
-    /* z-index: 1000; */
   }
 }
