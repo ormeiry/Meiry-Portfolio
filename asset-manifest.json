@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Meiry-Portfolio/static/css/main.a4aca017.chunk.css",
-    "main.js": "/Meiry-Portfolio/static/js/main.2b8b8aa1.chunk.js",
-    "main.js.map": "/Meiry-Portfolio/static/js/main.2b8b8aa1.chunk.js.map",
+    "main.css": "/Meiry-Portfolio/static/css/main.5b9435e6.chunk.css",
+    "main.js": "/Meiry-Portfolio/static/js/main.9d96082b.chunk.js",
+    "main.js.map": "/Meiry-Portfolio/static/js/main.9d96082b.chunk.js.map",
     "runtime-main.js": "/Meiry-Portfolio/static/js/runtime-main.3f932824.js",
     "runtime-main.js.map": "/Meiry-Portfolio/static/js/runtime-main.3f932824.js.map",
     "static/css/2.ccc6f86f.chunk.css": "/Meiry-Portfolio/static/css/2.ccc6f86f.chunk.css",
-    "static/js/2.8a0d0b67.chunk.js": "/Meiry-Portfolio/static/js/2.8a0d0b67.chunk.js",
-    "static/js/2.8a0d0b67.chunk.js.map": "/Meiry-Portfolio/static/js/2.8a0d0b67.chunk.js.map",
+    "static/js/2.510d8cf3.chunk.js": "/Meiry-Portfolio/static/js/2.510d8cf3.chunk.js",
+    "static/js/2.510d8cf3.chunk.js.map": "/Meiry-Portfolio/static/js/2.510d8cf3.chunk.js.map",
     "index.html": "/Meiry-Portfolio/index.html",
     "static/css/2.ccc6f86f.chunk.css.map": "/Meiry-Portfolio/static/css/2.ccc6f86f.chunk.css.map",
-    "static/css/main.a4aca017.chunk.css.map": "/Meiry-Portfolio/static/css/main.a4aca017.chunk.css.map",
-    "static/js/2.8a0d0b67.chunk.js.LICENSE.txt": "/Meiry-Portfolio/static/js/2.8a0d0b67.chunk.js.LICENSE.txt",
+    "static/css/main.5b9435e6.chunk.css.map": "/Meiry-Portfolio/static/css/main.5b9435e6.chunk.css.map",
+    "static/js/2.510d8cf3.chunk.js.LICENSE.txt": "/Meiry-Portfolio/static/js/2.510d8cf3.chunk.js.LICENSE.txt",
+    "static/media/aboutmeSVG.c3a362d1.svg": "/Meiry-Portfolio/static/media/aboutmeSVG.c3a362d1.svg",
+    "static/media/aboutwave.cd4e4104.svg": "/Meiry-Portfolio/static/media/aboutwave.cd4e4104.svg",
     "static/media/bgSVG.5f2a43f5.svg": "/Meiry-Portfolio/static/media/bgSVG.5f2a43f5.svg",
     "static/media/contactkeeper.fc374709.png": "/Meiry-Portfolio/static/media/contactkeeper.fc374709.png",
     "static/media/contactkeeperM.17849260.jpg": "/Meiry-Portfolio/static/media/contactkeeperM.17849260.jpg",
@@ -28,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.3f932824.js",
     "static/css/2.ccc6f86f.chunk.css",
-    "static/js/2.8a0d0b67.chunk.js",
-    "static/css/main.a4aca017.chunk.css",
-    "static/js/main.2b8b8aa1.chunk.js"
+    "static/js/2.510d8cf3.chunk.js",
+    "static/css/main.5b9435e6.chunk.css",
+    "static/js/main.9d96082b.chunk.js"
   ]
 }
