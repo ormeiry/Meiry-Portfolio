@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 
 import Card from "./Card";
 import { items } from "../../data";
-import "./CardContainer.css";
 
 import contactImg from "../../images/projects/contactkeeper.png";
 import gitImg from "../../images/projects/gituser.png";
@@ -38,7 +37,7 @@ const CardContainer = () => {
     return <Card info={dataArr[i]} img={img} key={project.id} />;
   });
 
-  return <div className="card-container">{project}</div>;
+  return <>{project}</>;
 };
 
 export default CardContainer;

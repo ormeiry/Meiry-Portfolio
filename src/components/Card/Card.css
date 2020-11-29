@@ -1,28 +1,52 @@
 .card {
-  height: 18%;
-  width: 90%;
+  height: 60vh;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--primary);
   border-radius: 5%;
-  overflow: hidden;
-  box-shadow: -1px 2px 7px -1px #000000;
-  animation: 1s ease-in-out fade-in;
+  background-image: url("../../images//projects//svg/blob.svg");
+  background-size: 250%;
+  background-repeat: no-repeat;
+  background-position-y: 150px;
+  background-position-x: -50px;
+  text-shadow: 1px 1px 5px var(--primary);
+  position: relative;
+  margin-top: 150px;
+}
+
+.card-animation {
+  animation: 0.7s ease-in-out fade-in;
 }
 
 .unseen {
   opacity: 0;
 }
 
+.svg-char {
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  z-index: 1000;
+  transform: scale(2);
+}
+
 .project-image {
-  height: 28%;
-  width: 100%;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  position: absolute;
+  top: -35px;
+  left: -20px;
+  height: 18%;
+  width: 50%;
+  border-radius: inherit;
+  box-shadow: -1px 2px 3px -2px #000000;
 }
 
 .card-content {
+  position: absolute;
+  top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,16 +54,12 @@
   line-height: 1.1rem;
   color: var(--w-text);
   margin-top: 10px;
-  height: 80%;
-  width: 90%;
+  height: 90%;
+  width: 70%;
 }
 
 .project-links {
-  margin-top: 15px;
   width: 100%;
-  padding: 5px;
-  background: var(--secondary);
-  overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,24 +108,32 @@
 
 @keyframes fade-in {
   from {
-    opacity: 0.4;
-    transform: translateY(500px) translateZ(500px) scale(0.6);
+    opacity: 0;
+    transform: translateX(-500px) scale(0.1);
   }
 }
 
 @media screen and (min-width: 760px) {
   .card {
-    height: 17%;
-    width: 90%;
+    height: 60vh;
+    width: 80%;
+    margin-top: 250px;
+  }
+
+  .svg-char {
+    bottom: -35px;
   }
 
   .project-image {
-    height: 30%;
+    top: -80px;
+    left: -50px;
+    height: 25%;
   }
 
   .card-content {
     line-height: 1.8rem;
-    height: 60%;
+    top: 40px;
+    height: 90%;
   }
 
   .project-links {
@@ -135,41 +163,37 @@
 
 @media screen and (min-width: 992px) {
   .card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 15%;
-    width: 70%;
-    border-radius: 5%;
-    box-shadow: -2px 1px 3px -1px #000000;
-    position: relative;
-    overflow: hidden;
+    background-size: 65%;
+    background-position-y: center;
+    background-position-x: 400px;
+    height: 65vh;
+    width: 60%;
+    border-radius: 50%;
+  }
+
+  .svg-char {
+    height: 50%;
   }
 
   .project-image {
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 26%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 2%;
-    border-bottom-right-radius: 2%;
+    top: 30%;
+    left: 0;
+    height: 50%;
+    width: 13%;
+    border-radius: 5%;
   }
 
   .card-content {
-    align-items: flex-start;
     height: 80%;
-    width: 80%;
+    width: 60%;
   }
 
   .project-links {
-    margin-top: 0px;
-    height: 100%;
-    width: 7%;
-    overflow: hidden;
-    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: -5%;
+    width: 30%;
   }
 
   .project-links a {
@@ -180,14 +204,23 @@
   }
 
   .card-content h2 {
+    position: absolute;
+    top: 50%;
+    left: -5%;
     font-size: 2.5rem;
   }
 
   .card-content h4 {
+    position: absolute;
+    top: 60%;
+    left: 0px;
     font-size: 1.6rem;
   }
 
   .card-content ul {
+    position: absolute;
+    top: 30%;
+    right: -5%;
     width: 60%;
   }
 

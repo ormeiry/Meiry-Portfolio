@@ -34,6 +34,7 @@
 
   .tech-container h2 {
     font-size: var(--pad-title);
+    margin-top: 250px;
   }
 
   .tech-container p {
@@ -51,6 +52,7 @@
 
   .tech-container h2 {
     font-size: var(--desktop-title);
+    margin-top: 250px;
   }
 
   .tech-container p {
