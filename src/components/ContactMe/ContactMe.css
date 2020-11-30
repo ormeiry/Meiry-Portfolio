@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 .contact-me h2 {
@@ -11,6 +12,14 @@
   margin-bottom: 2px;
   font-size: var(--mobile-title);
   color: var(--secondary);
+}
+
+.contact-svg {
+  position: absolute;
+  top: 88%;
+  left: 5%;
+  width: 27%;
+  height: 20%;
 }
 
 .contact-icons {
@@ -28,33 +37,33 @@
 }
 
 .contact-me p {
-  margin: 15px 0px;
+  margin: 25px 0px;
   color: var(--secondary);
   font-size: var(--mobile-p);
 }
 
 .contact-form {
-  background-color: var(--primary);
-  height: 480px;
-  width: 70%;
+  background-color: var(--secondary);
+  height: 350px;
+  width: 57%;
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: -1px 2px 7px -1px #000000;
+  box-shadow: -1px 2px 3px -1px #000000;
   border-radius: 5%;
   overflow: hidden;
   margin: 0;
 }
 
 .contact-form input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /* Change the color to your own background color */
+  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /* Change the color to your own background color */
   -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /*your box-shadow*/
+  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /*your box-shadow*/
   -webkit-text-fill-color: var(--w-text);
 }
 
@@ -62,8 +71,8 @@
   margin-bottom: 20px;
   padding: 8px;
   border: none;
-  border-bottom: 1px solid var(--secondary);
-  width: 80%;
+  border-bottom: 1px solid var(--primary);
+  width: 95%;
   font-size: 18px;
   color: var(--w-text);
   background: transparent;
@@ -76,12 +85,12 @@
   margin-top: 20px;
   padding: 8px;
   height: 50%;
-  width: 80%;
+  width: 95%;
   font-size: 18px;
   background: transparent;
   color: var(--w-text);
   border: none;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--primary);
 }
 
 .contact-form textarea:focus {
@@ -89,20 +98,20 @@
 }
 
 .contact-form textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /* Change the color to your own background color */
+  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /* Change the color to your own background color */
   -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px var(--primary) inset; /*your box-shadow*/
+  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /*your box-shadow*/
   -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form button {
   margin-top: 20px;
   padding: 10px 30px;
-  background-color: var(--secondary);
-  border: 1px solid var(--secondary);
+  background-color: var(--third);
+  border: 1px solid var(--w-text);
   border-radius: 10%;
 }
 
@@ -113,24 +122,31 @@
 }
 
 .contact-form i {
-  background-color: var(--secondary);
+  background-color: var(--third);
 }
 
 .err-text {
   margin: 0px;
-  color: var(--third);
+  color: var(--w-text);
   font-size: 0.6rem;
+  text-shadow: -1px 1px 1px var(--primary);
 }
 
 @media screen and (min-width: 760px) {
   .contact-form {
-    height: 600px;
-    width: 60%;
+    height: 580px;
+    width: 52%;
   }
   .contact-me h2 {
     margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: var(--pad-title);
+  }
+
+  .contact-svg {
+    top: 85%;
+    left: 4%;
+    width: 28%;
   }
 
   .contact-icons {
@@ -149,6 +165,7 @@
 
   .contact-form input {
     font-size: 22px;
+    width: 80%;
   }
 
   .contact-form input:focus {
@@ -157,6 +174,7 @@
 
   .contact-form textarea {
     font-size: 22px;
+    width: 80%;
   }
 
   .err-text {
@@ -177,6 +195,11 @@
     font-size: var(--desktop-title);
   }
 
+  .contact-svg {
+    left: 21.5%;
+    width: 20%;
+  }
+
   .contact-icons {
     width: 20%;
   }
@@ -192,5 +215,11 @@
 
   .contact-me p {
     font-size: var(--desktop-p);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact-svg {
+    left: 22.1%;
   }
 }
