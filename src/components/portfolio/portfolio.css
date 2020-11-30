@@ -1,10 +1,21 @@
 .portfolio-wrapper {
   height: 100%;
   width: 100vw;
+  background: rgb(246, 251, 251);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 251, 251, 1) 7%,
+    rgba(7, 78, 119, 0.7539390756302521) 18%,
+    rgba(18, 35, 46, 0.9640231092436975) 43%,
+    rgba(16, 44, 61, 0.9304096638655462) 60%,
+    rgba(7, 78, 119, 0.5326505602240896) 84%,
+    rgba(246, 251, 251, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 150px;
 }
 
 .portfolio-wrapper h1 {
@@ -12,6 +23,10 @@
   margin-bottom: 0;
   font-size: var(--mobile-title);
   color: var(--secondary);
+}
+
+.portfolio-wrapper span {
+  color: var(--third);
 }
 
 @media screen and (min-width: 760px) {

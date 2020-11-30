@@ -24,7 +24,7 @@ const changeSVG = (id) => {
 };
 
 const Card = ({ info: { title, listItems, link, github, name, id }, img }) => {
-  const options = { root: null, threshold: [0.4] };
+  const options = { root: null, threshold: [0.5] };
   const instructions = ([entry]) => {
     if (entry.isIntersecting) {
       entry.target.classList.remove("unseen");

@@ -6,7 +6,9 @@ import "./portfolio.css";
 const Portfolio = () => {
   return (
     <div className="portfolio-wrapper">
-      <h1>My Projects</h1>
+      <h1>
+        M<span>y</span> Pro<span>j</span>ects
+      </h1>
       <CardContainer />
     </div>
   );

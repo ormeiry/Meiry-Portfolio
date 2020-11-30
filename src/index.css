@@ -6,7 +6,7 @@
   --primary: #12232e;
   --secondary: #074e77;
   --third: #4da8da;
-  --w-text: #eefbfb;
+  --w-text: #f6fbfb;
   --mobile-p: 1.1rem;
   --pad-p: 1.9rem;
   --desktop-p: 1.8rem;
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: rgba(245, 244, 244, 0.959);
+  background-color: var(--w-text);
   font-family: "Concert One", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
