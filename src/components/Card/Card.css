@@ -163,65 +163,114 @@
 
 @media screen and (min-width: 992px) {
   .card {
-    background-size: 65%;
+    background-size: 60%;
     background-position-y: center;
-    background-position-x: 400px;
+    background-position-x: 380px;
     height: 65vh;
     width: 60%;
     border-radius: 50%;
   }
 
   .svg-char {
-    height: 50%;
+    height: 30%;
+    width: 17%;
   }
 
   .project-image {
     position: absolute;
     top: 30%;
-    left: 0;
+    left: -5%;
     height: 50%;
     width: 13%;
     border-radius: 5%;
   }
 
   .card-content {
+    line-height: 1.6rem;
     height: 80%;
-    width: 60%;
+    width: 80%;
   }
 
   .project-links {
     position: absolute;
-    top: 25%;
-    left: -5%;
-    width: 30%;
+    top: 30%;
+    left: 5px;
+    width: 25%;
   }
 
   .project-links a {
     padding: 0 0.5rem;
     text-decoration: none;
     color: var(--w-text);
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .card-content h2 {
     position: absolute;
     top: 50%;
-    left: -5%;
-    font-size: 2.5rem;
+    left: 30px;
+    font-size: 2.2rem;
   }
 
   .card-content h4 {
     position: absolute;
-    top: 60%;
-    left: 0px;
-    font-size: 1.6rem;
+    top: 63%;
+    left: 30px;
+    width: 33%;
+    font-size: 1.4rem;
   }
 
   .card-content ul {
     position: absolute;
-    top: 30%;
-    right: -5%;
-    width: 60%;
+    top: 15%;
+    right: 10%;
+    width: 35%;
+  }
+
+  .card-content li {
+    font-weight: 100;
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .card {
+    background-size: 65%;
+    background-position-x: 400px;
+  }
+
+  .svg-char {
+    height: 28%;
+    width: 20%;
+  }
+
+  .card-content {
+    line-height: 1.9rem;
+  }
+
+  .project-links {
+    width: 20%;
+  }
+
+  .project-links a {
+    font-size: 1rem;
+  }
+
+  .card-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .card-content h4 {
+    font-size: 1.6rem;
+    width: 25%;
+  }
+
+  .card-content ul {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 40%;
   }
 
   .card-content li {
