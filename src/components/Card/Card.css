@@ -72,6 +72,7 @@
 }
 
 .card-content h2 {
+  color: #ffb9b9;
   color: var(--third);
   font-size: 1.6rem;
   font-weight: 600;

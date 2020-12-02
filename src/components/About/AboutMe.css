@@ -6,7 +6,7 @@
   align-items: center;
   color: var(--secondary);
   font-weight: 500;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -20,9 +20,9 @@
 .about-me-svg {
   position: absolute;
   height: 30%;
-  width: 28%;
-  top: 0px;
-  left: 35px;
+  width: 32%;
+  top: 1%;
+  left: 5%;
   z-index: 1000;
 }
 

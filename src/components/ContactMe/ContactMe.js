@@ -54,7 +54,9 @@ const ContactMe = () => {
 
   return (
     <div className="contact-me">
-      <h2>Contact Me</h2>
+      <h2>
+        Cont<span>a</span>ct Me
+      </h2>
       <p>You can do it via</p>
       <ContactSVG className="contact-svg" />
       <div className="contact-icons">

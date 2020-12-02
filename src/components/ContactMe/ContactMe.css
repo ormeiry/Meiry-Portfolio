@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  /* background-color: var(--secondary); */
 }
 
 .contact-me h2 {
@@ -12,6 +13,10 @@
   margin-bottom: 2px;
   font-size: var(--mobile-title);
   color: var(--secondary);
+}
+
+.contact-me span {
+  color: var(--third);
 }
 
 .contact-svg {
@@ -43,7 +48,7 @@
 }
 
 .contact-form {
-  background-color: var(--secondary);
+  background-color: var(--w-text);
   height: 350px;
   width: 57%;
   padding: 20px 10px;
@@ -51,34 +56,35 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: -1px 2px 3px -1px #000000;
+  /* box-shadow: -1px 2px 3px -1px #000000; */
+  border: 2px solid var(--third);
   border-radius: 5%;
   overflow: hidden;
   margin: 0;
 }
 
 .contact-form input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /* Change the color to your own background color */
-  -webkit-text-fill-color: var(--w-text);
+  -webkit-box-shadow: 0 0 0 50px var(--w-text) inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: var(--secondary);
 }
 
 .contact-form input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /*your box-shadow*/
-  -webkit-text-fill-color: var(--w-text);
+  -webkit-box-shadow: 0 0 0 50px var(--w-text) inset; /*your box-shadow*/
+  -webkit-text-fill-color: var(--secondary);
 }
 
 .contact-form input {
   margin-bottom: 20px;
   padding: 8px;
   border: none;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--third);
   width: 95%;
   font-size: 18px;
-  color: var(--w-text);
+  color: var(--primary);
   background: transparent;
 }
 .contact-form input:focus {
-  outline: 1px solid var(--secondary);
+  outline: 1px solid var(--third);
 }
 
 .contact-form textarea {
@@ -88,13 +94,13 @@
   width: 95%;
   font-size: 18px;
   background: transparent;
-  color: var(--w-text);
+  color: var(--primary);
   border: none;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--third);
 }
 
 .contact-form textarea:focus {
-  outline: 1px solid var(--secondary);
+  outline: none;
 }
 
 .contact-form textarea:-webkit-autofill {
@@ -111,14 +117,14 @@
   margin-top: 20px;
   padding: 10px 30px;
   background-color: var(--third);
-  border: 1px solid var(--w-text);
+  border: 1px solid var(--primary);
   border-radius: 10%;
 }
 
 .contact-form button:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  border: 1px solid var(--w-text);
+  transform: scale(1.05);
+  /* border: 1px solid var(--w-text); */
 }
 
 .contact-form i {
@@ -127,9 +133,9 @@
 
 .err-text {
   margin: 0px;
-  color: var(--w-text);
+  color: var(--primary);
   font-size: 0.6rem;
-  text-shadow: -1px 1px 1px var(--primary);
+  /* text-shadow: -1px 1px 1px var(--primary); */
 }
 
 @media screen and (min-width: 760px) {
@@ -191,7 +197,7 @@
 
   .contact-me h2 {
     margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: var(--desktop-title);
   }
 

@@ -21,6 +21,10 @@
   font-size: var(--mobile-title);
 }
 
+.tech-container span {
+  color: var(--third);
+}
+
 .tech-container p {
   width: 80%;
   font-size: var(--mobile-p);
