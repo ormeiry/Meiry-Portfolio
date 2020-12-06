@@ -28,7 +28,7 @@ export const items = [
   {
     title: "Let's Sort Things Out Once And For All...",
     listItems: [
-      'HTML ,CSS ,JavaScript.',
+      'HTML, CSS, JavaScript.',
       'p5 library with async sorting functions for the animations.',
       'Generate an array, Pick the size of the array and the speed you want the sorting algorithm to move in.',
     ],
