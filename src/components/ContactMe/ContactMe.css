@@ -5,7 +5,6 @@
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  /* background-color: var(--secondary); */
 }
 
 .contact-me h2 {
@@ -56,7 +55,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* box-shadow: -1px 2px 3px -1px #000000; */
   border: 2px solid var(--third);
   border-radius: 5%;
   overflow: hidden;
@@ -64,12 +62,12 @@
 }
 
 .contact-form input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px var(--w-text) inset; /* Change the color to your own background color */
+  -webkit-box-shadow: 0 0 0 50px var(--w-text) inset;
   -webkit-text-fill-color: var(--secondary);
 }
 
 .contact-form input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px var(--w-text) inset; /*your box-shadow*/
+  -webkit-box-shadow: 0 0 0 50px var(--w-text) inset;
   -webkit-text-fill-color: var(--secondary);
 }
 
@@ -104,12 +102,12 @@
 }
 
 .contact-form textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /* Change the color to your own background color */
+  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset;
   -webkit-text-fill-color: var(--w-text);
 }
 
 .contact-form textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset; /*your box-shadow*/
+  -webkit-box-shadow: 0 0 0 50px var(--secondary) inset;
   -webkit-text-fill-color: var(--w-text);
 }
 
@@ -124,7 +122,6 @@
 .contact-form button:hover {
   cursor: pointer;
   transform: scale(1.05);
-  /* border: 1px solid var(--w-text); */
 }
 
 .contact-form i {
@@ -135,7 +132,6 @@
   margin: 0px;
   color: var(--primary);
   font-size: 0.6rem;
-  /* text-shadow: -1px 1px 1px var(--primary); */
 }
 
 @media screen and (min-width: 760px) {

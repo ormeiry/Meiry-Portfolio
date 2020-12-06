@@ -84,6 +84,40 @@
 
   .about-me-svg {
     position: absolute;
+    height: 65%;
+    width: 30%;
+    left: 90px;
+  }
+
+  .title {
+    width: 60%;
+    margin-top: 450px;
+    margin-right: 80px;
+    text-align: center;
+    font-size: var(--desktop-title);
+  }
+
+  .about-container p {
+    margin-top: 50px;
+    margin-bottom: 300px;
+    margin-right: 100px;
+    font-size: var(--desktop-p);
+    width: 55%;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .about-container {
+    align-items: flex-end;
+  }
+
+  .about-wave {
+    width: 180%;
+  }
+
+  .about-me-svg {
+    position: absolute;
     height: 80%;
     width: 30%;
     left: 90px;
