@@ -6,7 +6,7 @@ export const items = [
       "Nodejs with Express and MongoDB for the server side (REST API).",
       "The user can register, add his own contacts, edit, delete and filter them.",
     ],
-    link: "https://meiry-contact-keeper.herokuapp.com/login",
+    link: "https://meiry-contact-keeper-app.herokuapp.com/login",
     github: "https://github.com/ormeiry/Contact-Keeper",
     name: "Contact Keeper",
     img: "/projects/contactkeeper.png",
