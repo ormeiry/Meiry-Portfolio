@@ -13,3 +13,7 @@ Learn about me, see my projects in action and get into the code.
 There is a link attached above.
 
 <img src="./src/images/projects/portfolio.png" alt="gitUser" width="700"/>
+
+[Old portfolio website repo][old portfolio]
+
+[old portfolio]: https://github.com/ormeiry/OR-s-Portfolio
