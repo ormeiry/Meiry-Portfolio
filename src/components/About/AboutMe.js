@@ -27,7 +27,7 @@ const AboutMe = () => {
         I love People, Programming, and learning new things. Currently looking
         for a place that has all three. I have dedicated my time and effort to
         turn my life upside down, stopped being scared of failing, and jumped
-        headfirst into this amazing field. I finished over 270 hours of
+        headfirst into this amazing field. I finished over 287 hours of
         professional online courses, and far more of them writing, reading, and
         understanding code. My journey continues to this day. The hunger for
         knowledge is growing as I learn more. All I need is a place where I can
