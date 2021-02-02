@@ -24,14 +24,16 @@ const AboutMe = () => {
         <span>A</span>bout Me
       </h2>
       <p>
-        I love People, Programming, and learning new things. Currently looking
-        for a place that has all three. I have dedicated my time and effort to
-        turn my life upside down, stopped being scared of failing, and jumped
-        headfirst into this amazing field. I finished over 287 hours of
-        professional online courses, and far more of them writing, reading, and
-        understanding code. My journey continues to this day. The hunger for
-        knowledge is growing as I learn more. All I need is a place where I can
-        grow as a developer, and surly enough my contribution will come fast.
+        I enjoy solving problems, thinking out of the box, and learning new
+        things every day. I Like working with other people and seeing things
+        through their eyes to improve myself and my environment. I believe Those
+        are the qualities that formed my natural connection to programming and
+        my enthusiasm for developing. Over the last year, I learned everything I
+        can about it, dedicating my time and effort to consume every piece of
+        knowledge I can find. I spent hundreds of hours on great courses,
+        hundreds more on writing code and banging my head on the table, trying
+        to find a solution to a problem. It was and still is a great and
+        challenging adventure.
       </p>
     </div>
   );
