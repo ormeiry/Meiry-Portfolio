@@ -1,15 +1,15 @@
-import React from "react";
-import "./Card.css";
+import React from 'react';
+import './Card.css';
 
-import { useObserver } from "../../hooks/useObserver";
-import { changeSVG } from "../utils/switch";
+import { useObserver } from '../../hooks/useObserver';
+import { changeSVG } from '../utils/switch';
 
 const Card = ({ info: { title, listItems, link, github, name, id }, img }) => {
   const options = { root: null, threshold: [0.5] };
   const instructions = ([entry]) => {
     if (entry.isIntersecting) {
-      entry.target.classList.remove("unseen");
-      entry.target.classList.add("card-animation");
+      entry.target.classList.remove('unseen');
+      entry.target.classList.add('card-animation');
     }
   };
 
@@ -21,22 +21,24 @@ const Card = ({ info: { title, listItems, link, github, name, id }, img }) => {
 
   return (
     <>
-      <div className="unseen card" ref={observerRef}>
-        <img src={img} alt="project" className="project-image" />
-        <div className="card-content">
-          <div className="project-links">
-            <a href={link} target="_blank" rel="noopener">
-              <i className="fas fa-eye fa-3x"></i>
-            </a>
-            <a href={github} target="_blank" rel="noopener">
-              <i className="fab fa-github fa-3x"></i>
+      <div className='unseen card' ref={observerRef}>
+        <img src={img} alt='project' className='project-image' />
+        <div className='card-content'>
+          <div className='project-links'>
+            {id !== 'theWay' ? (
+              <a href={link} target='_blank' rel='noopener'>
+                <i className='fas fa-eye fa-3x'></i>
+              </a>
+            ) : null}
+            <a href={github} target='_blank' rel='noopener'>
+              <i className='fab fa-github fa-3x'></i>
             </a>
           </div>
           <h2>{name}</h2>
           <h4>{title}</h4>
           <ul>{ul}</ul>
         </div>
-        <SVG className="svg-char" />
+        <SVG className='svg-char' />
       </div>
     </>
   );

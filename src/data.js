@@ -45,9 +45,9 @@ export const items = [
       'I use a GitHub repo to try and explain the JS programming language the way I understand it.',
       "I'm creating new content and updating as often as I can.",
     ],
-    github: 'https://github.com/ormeiry/-3-2-1-sort-',
+    github: 'https://github.com/ormeiry/The-Way-I-See-JavaScript',
     name: 'The way I see JavaScript',
-    img: '/projects/theWay.png',
+    img: '/projects/theWay.jpg',
     id: 'theWay',
   },
   {

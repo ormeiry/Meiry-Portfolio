@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10%;
-  background-image: url("../../images//projects//svg/blob.svg");
+  background-image: url('../../images//projects//svg/blob.svg');
   background-size: 280%;
   background-repeat: no-repeat;
   background-position-y: 150px;
@@ -74,6 +74,7 @@
 .card-content h2 {
   color: #ffb9b9;
   color: var(--third);
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
@@ -148,9 +149,12 @@
   .card-content h2 {
     font-size: 2.6rem;
     font-weight: 600;
+    text-align: start;
+    width: 50%;
   }
 
   .card-content h4 {
+    padding-top: 15px;
     font-size: 1.85rem;
   }
 
