@@ -39,6 +39,18 @@ export const items = [
     id: 'sort',
   },
   {
+    title: "It's JS, from my POV.",
+    listItems: [
+      'This is an ongoing tutorial.',
+      'I use a GitHub repo to try and explain the JS programming language the way I understand it.',
+      "I'm creating new content and updating as often as I can.",
+    ],
+    github: 'https://github.com/ormeiry/-3-2-1-sort-',
+    name: 'The way I see JavaScript',
+    img: '/projects/theWay.png',
+    id: 'theWay',
+  },
+  {
     title: "Yes, It's Better Than Github.",
     listItems: [
       'React with hooks and context API for the client side.',
