@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-### what can you do?
+### what is inside?
 
 Learn about me, see my projects in action and get into the code.
 
@@ -11,7 +11,7 @@ Learn about me, see my projects in action and get into the code.
 - CSS Animations and Font Awesome.
 
 I had so much fun working on this one. It was amazing from start to finish.
-I will update it from time to time with new content and projects!.
+I will update it from time to time with new content, theme and projects!.
 
 [Check it out!][new portfolio]
 
